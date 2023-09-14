@@ -1,5 +1,6 @@
 package edu.temple.helloworld
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         
         // Respond to button click event per specifications
-
+        clickMeButton.setOnClickListener{displayTextView.text = "Hello, ${nameEditText.text}"}
 
     }
 }
