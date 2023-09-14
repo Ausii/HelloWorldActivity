@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     // Declare view properties - the first one is done for you
     lateinit var displayTextView: TextView
+    lateinit var clickMeButton: Button
+    lateinit var nameEditText: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
